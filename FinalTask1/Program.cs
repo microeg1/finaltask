@@ -16,7 +16,7 @@ class Program
         }
     }
 
-    void PrintArray(string[] array)
+    static void PrintArray(string[] array)
     {
         for (int i = 0; i < array.Length; i++)
         {
@@ -28,5 +28,7 @@ class Program
     {
         string[] array1 = new string[4] {"2", "hello", "world", ":-)"};
         string[] array2 = new string[array1.Length];
+        SortArray(array1, array2);
+        PrintArray(array2);
     }
 }
